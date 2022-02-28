@@ -1,0 +1,35 @@
+/**
+  ******************************************************************************
+  * @file    main.c
+  * @author  Ac6
+  * @version V1.0
+  * @date    01-December-2013
+  * @brief   Default main function.
+  ******************************************************************************
+*/
+
+
+
+
+#include "stm32f10x.h"
+#include "uart_driver.h"
+#include <stdio.h>
+#include "spi_driver.h"
+
+
+int main(void)
+{
+
+
+	SystemCoreClockUpdate();
+
+	uint8_t receivedByte ;
+		uart_init();
+
+		flash_write_buffer(data , WRITE_ADDRESS , sizeof(data));
+
+
+
+
+
+	}

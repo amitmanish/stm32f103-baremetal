@@ -1,0 +1,29 @@
+/*
+ * i2c_driver.h
+ *
+ *  Created on: Sep 1, 2021
+ *      Author: lucifer
+ */
+
+#ifndef __SPI_DRIVER__
+#define __SPI_DRIVER__
+
+#include "stm32f10x.h"
+
+#define MPU_ADDRESS (0x68<<1)
+#define MPU_ADDRESS_READ (0x68<<1|0x1)
+#define WHO_AM_I_REG 0x75
+#define PWR_1_REG 0x68
+
+
+void spi_int(void);
+
+uint8_t spi_send_byte(uint8_t);
+
+uint8_t spi_receive_byte(void);
+
+void spi_send_data(uint8_t);
+
+uint8_t spi_receive_data(void);
+
+#endif

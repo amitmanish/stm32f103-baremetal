@@ -1,0 +1,1674 @@
+22:23:15 **** Clean-only build of configuration Debug for project UART ****
+make -j4 clean 
+rm -rf *
+ 
+22:23:22 **** Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../startup/startup_stm32f10x_md.S
+Building file: ../src/main.c
+Building file: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Building file: ../src/system_stm32f10x.c
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/startup_stm32f10x_md.d" -MT"startup/startup_stm32f10x_md.o" -o "startup/startup_stm32f10x_md.o" "../startup/startup_stm32f10x_md.S"
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f10x.d" -MT"src/system_stm32f10x.o" -o "src/system_stm32f10x.o" "../src/system_stm32f10x.c"
+Finished building: ../startup/startup_stm32f10x_md.S
+ 
+Building file: /home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c"
+../src/system_stm32f10x.c: In function 'SetSysClock':
+../src/system_stm32f10x.c:284:37: warning: unused variable 'HSEStatus' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                                     ^~~~~~~~~
+../src/system_stm32f10x.c:284:17: warning: unused variable 'StartUpCounter' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                 ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:27:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("I2C Init Done");
+             ^~~~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+../src/main.c:35:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(buf,"%d",receivedByte);
+           ^~~
+In file included from ../src/main.c:15:0:
+/home/lucifer/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../src/main.c:36:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("MPU6050 Driver: WHO AM I : ");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+../src/main.c:37:13: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   send_data(&buf);
+             ^
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[20] {aka unsigned char (*)[20]}'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+../src/main.c:40:1: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+ for(;;);
+ ^~~
+../src/main.c:42:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   i2c_send_data(PWR_1_REG);
+   ^~~~~~~~~~~~~
+../src/main.c:44:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("PWR_1 Reg address Sent");
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+../src/main.c:50:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("MPU Wakeup done");
+             ^~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+../src/main.c:55:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("I2C Start sent");
+             ^~~~~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+../src/main.c:61:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("Slave address sent");
+             ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:13:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+Finished building: ../src/syscalls.c
+ 
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Finished building: /home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c
+ 
+Building file: /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c"
+Finished building: ../src/system_stm32f10x.c
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+ 
+Finished building: ../src/main.c
+ 
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'send_stop':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:49:10: warning: unused variable 'temporary' [-Wunused-variable]
+ uint16_t temporary = I2C1->SR1;
+          ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'send_address':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:55:10: warning: unused variable 'temp' [-Wunused-variable]
+ uint16_t temp = I2C1->SR1 | I2C1->SR2;
+          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'i2c_send_data':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:74:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Start sent");
+            ^~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:78:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address sent");
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'i2c_receive_data':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:91:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address for byte read sent");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:95:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("byte read");
+            ^~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'send_stop':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:49:10: warning: unused variable 'temporary' [-Wunused-variable]
+ uint16_t temporary = I2C1->SR1;
+          ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'send_address':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:55:10: warning: unused variable 'temp' [-Wunused-variable]
+ uint16_t temp = I2C1->SR1 | I2C1->SR2;
+          ^~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'i2c_send_data':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:74:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Start sent");
+            ^~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:78:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address sent");
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'i2c_receive_data':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:91:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address for byte read sent");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:95:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("byte read");
+            ^~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Finished building: /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c
+ 
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+Drivers/SPI/spi_driver.o: In function `send_start':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:41: multiple definition of `send_start'
+makefile:37: recipe for target 'UART.elf' failed
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:41: first defined here
+Drivers/SPI/spi_driver.o: In function `send_stop':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:47: multiple definition of `send_stop'
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:47: first defined here
+Drivers/SPI/spi_driver.o: In function `send_address':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52: multiple definition of `send_address'
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:52: first defined here
+Drivers/SPI/spi_driver.o: In function `i2c_send_byte':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:58: multiple definition of `i2c_send_byte'
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:58: first defined here
+Drivers/SPI/spi_driver.o: In function `i2c_receive_byte':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:65: multiple definition of `i2c_receive_byte'
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:65: first defined here
+Drivers/SPI/spi_driver.o: In function `i2c_send_data':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:72: multiple definition of `i2c_send_data'
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:72: first defined here
+Drivers/SPI/spi_driver.o: In function `i2c_receive_data':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:85: multiple definition of `i2c_receive_data'
+Drivers/I2C/i2c_driver.o:/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:85: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [UART.elf] Error 1
+19:23:12 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_read_id':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:66:41: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+ uint8_t temp =0 , temp0 = 0, temp1 =0 , temp2=0;
+                                         ^~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_status_register3':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:143:2: warning: 'return' with no value, in function returning non-void
+  return;
+  ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:137:9: note: declared here
+ uint8_t flash_write_status_register3(void)
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:161:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_buffer':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:178:56: error: expected expression before ']' token
+    flash_write_page(data , WRITE_ADDRESS , sizeof(data[]));
+                                                        ^
+Drivers/SPI/subdir.mk:18: recipe for target 'Drivers/SPI/spi_driver.o' failed
+make: *** [Drivers/SPI/spi_driver.o] Error 1
+20:49:44 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_read_id':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:66:41: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+ uint8_t temp =0 , temp0 = 0, temp1 =0 , temp2=0;
+                                         ^~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:165:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+Finished building target: UART.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "UART.elf" "UART.bin"
+arm-none-eabi-size "UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+  22856	   2508	    384	  25748	   6494	UART.elf
+arm-none-eabi-objcopy -O ihex "UART.elf" "UART.hex"
+ 
+20:56:11 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Building file: /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_read_id':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:66:41: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+ uint8_t temp =0 , temp0 = 0, temp1 =0 , temp2=0;
+                                         ^~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:165:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'test_i2c':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:14:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("I2C Init Done");
+             ^~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:20:3: error: 'receivedByte' undeclared (first use in this function); did you mean 'i2c_receive_byte'?
+   receivedByte = i2c_receive_data();
+   ^~~~~~~~~~~~
+   i2c_receive_byte
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:20:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   sprintf(buf,"%d",receivedByte);
+   ^~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(buf,"%d",receivedByte);
+           ^~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:11: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:23:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("MPU6050 Driver: WHO AM I : ");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:24:13: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   send_data(&buf);
+             ^
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[20] {aka unsigned char (*)[20]}'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:27:1: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+ for(;;);
+ ^~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:29:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   i2c_send_data(PWR_1_REG);
+   ^~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:31:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("PWR_1 Reg address Sent");
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:37:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("MPU Wakeup done");
+             ^~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:42:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("I2C Start sent");
+             ^~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:48:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("Slave address sent");
+             ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'send_stop':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:89:10: warning: unused variable 'temporary' [-Wunused-variable]
+ uint16_t temporary = I2C1->SR1;
+          ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'send_address':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:95:10: warning: unused variable 'temp' [-Wunused-variable]
+ uint16_t temp = I2C1->SR1 | I2C1->SR2;
+          ^~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'i2c_send_data':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:114:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Start sent");
+            ^~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:118:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address sent");
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'i2c_receive_data':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:131:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address for byte read sent");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:135:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("byte read");
+            ^~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+20:56:21 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Building file: /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/I2C/i2c_driver.d" -MT"Drivers/I2C/i2c_driver.o" -o "Drivers/I2C/i2c_driver.o" "/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'test_i2c':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:14:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("I2C Init Done");
+             ^~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:20:3: error: 'receivedByte' undeclared (first use in this function); did you mean 'i2c_receive_byte'?
+   receivedByte = i2c_receive_data();
+   ^~~~~~~~~~~~
+   i2c_receive_byte
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:20:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   sprintf(buf,"%d",receivedByte);
+   ^~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(buf,"%d",receivedByte);
+           ^~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:22:11: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:23:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("MPU6050 Driver: WHO AM I : ");
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:24:13: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   send_data(&buf);
+             ^
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[20] {aka unsigned char (*)[20]}'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:27:1: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+ for(;;);
+ ^~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:29:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+Drivers/I2C/subdir.mk:18: recipe for target 'Drivers/I2C/i2c_driver.o' failed
+   i2c_send_data(PWR_1_REG);
+   ^~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:31:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("PWR_1 Reg address Sent");
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:37:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("MPU Wakeup done");
+             ^~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:42:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("I2C Start sent");
+             ^~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:48:13: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+   send_data("Slave address sent");
+             ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'send_stop':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:89:10: warning: unused variable 'temporary' [-Wunused-variable]
+ uint16_t temporary = I2C1->SR1;
+          ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'send_address':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:95:10: warning: unused variable 'temp' [-Wunused-variable]
+ uint16_t temp = I2C1->SR1 | I2C1->SR2;
+          ^~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'i2c_send_data':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:114:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Start sent");
+            ^~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:118:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address sent");
+            ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c: In function 'i2c_receive_data':
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:131:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+  send_data("Slave address for byte read sent");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:135:12: warning: pointer targets in passing argument 1 of 'send_data' differ in signedness [-Wpointer-sign]
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+  send_data("byte read");
+            ^~~~~~~~~~~
+In file included from /home/lucifer/github/STM32F1/Drivers/I2C/i2c_driver.c:8:0:
+/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.h:9:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void send_data(uint8_t *dp);
+      ^~~~~~~~~
+make: *** [Drivers/I2C/i2c_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_read_id':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:66:41: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+ uint8_t temp =0 , temp0 = 0, temp1 =0 , temp2=0;
+                                         ^~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:165:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+20:57:15 **** Clean-only build of configuration Debug for project UART ****
+make -j4 clean 
+rm -rf *
+ 
+20:57:17 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../startup/startup_stm32f10x_md.S
+Building file: ../src/main.c
+Building file: ../src/syscalls.c
+Building file: ../src/system_stm32f10x.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/startup_stm32f10x_md.d" -MT"startup/startup_stm32f10x_md.o" -o "startup/startup_stm32f10x_md.o" "../startup/startup_stm32f10x_md.S"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f10x.d" -MT"src/system_stm32f10x.o" -o "src/system_stm32f10x.o" "../src/system_stm32f10x.c"
+Finished building: ../startup/startup_stm32f10x_md.S
+ 
+Building file: /home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c
+../src/system_stm32f10x.c: In function 'SetSysClock':
+../src/system_stm32f10x.c:284:37: warning: unused variable 'HSEStatus' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                                     ^~~~~~~~~
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+../src/system_stm32f10x.c:284:17: warning: unused variable 'StartUpCounter' [-Wunused-variable]
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+Invoking: MCU GCC Compiler
+                 ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+make: *** Waiting for unfinished jobs....
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c"
+Finished building: ../src/system_stm32f10x.c
+ 
+Finished building: ../src/syscalls.c
+ 
+Finished building: /home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c
+ 
+20:58:33 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_read_id':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:66:41: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+ uint8_t temp =0 , temp0 = 0, temp1 =0 , temp2=0;
+                                         ^~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:165:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+20:59:28 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_read_id':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:66:41: warning: variable 'temp2' set but not used [-Wunused-but-set-variable]
+ uint8_t temp =0 , temp0 = 0, temp1 =0 , temp2=0;
+                                         ^~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_status_register3':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:144:2: warning: 'return' with no value, in function returning non-void
+  return;
+  ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:138:9: note: declared here
+ uint8_t flash_write_status_register3(void)
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:162:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+20:59:56 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_status_register3':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:144:2: warning: 'return' with no value, in function returning non-void
+  return;
+  ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:138:9: note: declared here
+ uint8_t flash_write_status_register3(void)
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:162:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:00:36 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c: In function 'flash_write_page':
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:162:17: warning: passing argument 1 of 'spi_send_byte' makes integer from pointer without a cast [-Wint-conversion]
+   spi_send_byte(buffer);
+                 ^~~~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:52:9: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ uint8_t spi_send_byte(uint8_t data){
+         ^~~~~~~~~~~~~
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:02:33 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:03:44 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/I2C" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:17:10: fatal error: spi_driver.h: No such file or directory
+ #include "spi_driver.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+21:06:16 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../startup/startup_stm32f10x_md.S
+Building file: ../src/main.c
+Building file: ../src/system_stm32f10x.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/startup_stm32f10x_md.d" -MT"startup/startup_stm32f10x_md.o" -o "startup/startup_stm32f10x_md.o" "../startup/startup_stm32f10x_md.S"
+Building file: ../src/syscalls.c
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f10x.d" -MT"src/system_stm32f10x.o" -o "src/system_stm32f10x.o" "../src/system_stm32f10x.c"
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Finished building: ../startup/startup_stm32f10x_md.S
+ 
+Building file: /home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/uart/uart_driver.d" -MT"Drivers/uart/uart_driver.o" -o "Drivers/uart/uart_driver.o" "/home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c"
+../src/system_stm32f10x.c: In function 'SetSysClock':
+../src/system_stm32f10x.c:284:37: warning: unused variable 'HSEStatus' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                                     ^~~~~~~~~
+../src/system_stm32f10x.c:284:17: warning: unused variable 'StartUpCounter' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                 ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:28:3: warning: implicit declaration of function 'spi_init'; did you mean 'spi_int'? [-Wimplicit-function-declaration]
+   spi_init();
+   ^~~~~~~~
+   spi_int
+../src/main.c:29:3: warning: implicit declaration of function 'flash_write_buffer'; did you mean 'flash_write_page'? [-Wimplicit-function-declaration]
+   flash_write_buffer(data , WRITE_ADDRESS , sizeof(data));
+   ^~~~~~~~~~~~~~~~~~
+   flash_write_page
+../src/main.c:26:10: warning: unused variable 'receivedByte' [-Wunused-variable]
+  uint8_t receivedByte ;
+          ^~~~~~~~~~~~
+Finished building: ../src/system_stm32f10x.c
+ 
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+Finished building: ../src/syscalls.c
+ 
+Finished building: /home/lucifer/github/STM32F1/Drivers/uart/uart_driver.c
+ 
+Finished building: ../src/main.c
+ 
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+src/main.o:/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.h:27: multiple definition of `data'
+makefile:36: recipe for target 'UART.elf' failed
+Drivers/SPI/spi_driver.o:/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.h:27: first defined here
+src/main.o: In function `main':
+/home/lucifer/github/STM32F1/Examples/UART/Debug/../src/main.c:28: undefined reference to `spi_init'
+collect2: error: ld returned 1 exit status
+make: *** [UART.elf] Error 1
+21:06:27 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:27:3: warning: implicit declaration of function 'spi_init'; did you mean 'spi_int'? [-Wimplicit-function-declaration]
+   spi_init();
+   ^~~~~~~~
+   spi_int
+../src/main.c:28:3: warning: implicit declaration of function 'flash_write_buffer'; did you mean 'flash_write_page'? [-Wimplicit-function-declaration]
+   flash_write_buffer(data , WRITE_ADDRESS , sizeof(data));
+   ^~~~~~~~~~~~~~~~~~
+   flash_write_page
+Finished building: ../src/main.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+src/main.o:/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.h:27: multiple definition of `data'
+makefile:36: recipe for target 'UART.elf' failed
+Drivers/SPI/spi_driver.o:/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.h:27: first defined here
+src/main.o: In function `main':
+/home/lucifer/github/STM32F1/Examples/UART/Debug/../src/main.c:27: undefined reference to `spi_init'
+collect2: error: ld returned 1 exit status
+make: *** [UART.elf] Error 1
+21:06:56 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+../src/main.c: In function 'main':
+../src/main.c:28:3: warning: implicit declaration of function 'flash_write_buffer'; did you mean 'flash_write_page'? [-Wimplicit-function-declaration]
+   flash_write_buffer(data , WRITE_ADDRESS , sizeof(data));
+   ^~~~~~~~~~~~~~~~~~
+   flash_write_page
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+src/main.o:/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.h:27: multiple definition of `data'
+Drivers/SPI/spi_driver.o:/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.h:27: first defined here
+collect2: error: ld returned 1 exit status
+makefile:36: recipe for target 'UART.elf' failed
+make: *** [UART.elf] Error 1
+21:07:46 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+../src/main.c: In function 'main':
+../src/main.c:28:3: warning: implicit declaration of function 'flash_write_buffer'; did you mean 'flash_write_page'? [-Wimplicit-function-declaration]
+   flash_write_buffer(data , WRITE_ADDRESS , sizeof(data));
+   ^~~~~~~~~~~~~~~~~~
+   flash_write_page
+../src/main.c:28:51: error: invalid application of 'sizeof' to incomplete type 'uint8_t[] {aka unsigned char[]}'
+   flash_write_buffer(data , WRITE_ADDRESS , sizeof(data));
+                                                   ^
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:09:16 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+../src/main.c: In function 'main':
+../src/main.c:28:49: error: invalid application of 'sizeof' to incomplete type 'uint8_t[] {aka unsigned char[]}'
+   flash_write_page(data , WRITE_ADDRESS , sizeof(data));
+                                                 ^
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:09:50 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:28:49: error: invalid application of 'sizeof' to incomplete type 'uint8_t[] {aka unsigned char[]}'
+   flash_write_page(data , WRITE_ADDRESS , sizeof(data));
+                                                 ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** Waiting for unfinished jobs....
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:10:22 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+../src/main.c: In function 'main':
+../src/main.c:28:55: error: expected expression before ']' token
+   flash_write_page(data , WRITE_ADDRESS , sizeof(data[]));
+                                                       ^
+make: *** [src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+21:12:37 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:28:64: error: expected expression before ']' token
+   flash_write_page(data , WRITE_ADDRESS , (uint8_t)sizeof(data[]));
+                                                                ^
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+21:12:47 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:28:58: error: invalid application of 'sizeof' to incomplete type 'uint8_t[] {aka unsigned char[]}'
+   flash_write_page(data , WRITE_ADDRESS , (uint8_t)sizeof(data));
+                                                          ^
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+21:16:05 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:13:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:14:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:15:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:16:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:17:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:18:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:19:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:20:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:56: warning: excess elements in array initializer
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:21:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:7: warning: excess elements in array initializer
+ 
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+Finished building: ../src/main.c
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:28: warning: excess elements in array initializer
+ 
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:22:56: note: (near initialization for 'data')
+Building target: UART.elf
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:14: warning: excess elements in array initializer
+Invoking: MCU GCC Linker
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:14: note: (near initialization for 'data')
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:23:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:24:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:25:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:26:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:27:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:28:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:29:56: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:7: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+       ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:7: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:14: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+              ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:14: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:21: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+                     ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:21: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:28: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+                            ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:28: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:35: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+                                   ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:35: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:42: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+                                          ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:42: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:49: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+                                                 ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:49: note: (near initialization for 'data')
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:56: warning: excess elements in array initializer
+       0xAA , 0XBB , 0XCC , 0xEE , 0x11 , 0x22 , 0x33 , 0x44,};
+                                                        ^~~~
+/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c:30:56: note: (near initialization for 'data')
+Finished building target: UART.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "UART.elf" "UART.bin"
+arm-none-eabi-size "UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1836	   1120	    324	   3280	    cd0	UART.elf
+arm-none-eabi-objcopy -O ihex "UART.elf" "UART.hex"
+ 
+21:16:27 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+Finished building target: UART.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "UART.elf" "UART.bin"
+arm-none-eabi-size "UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1836	   1264	    324	   3424	    d60	UART.elf
+arm-none-eabi-objcopy -O ihex "UART.elf" "UART.hex"
+ 
+21:44:14 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+../src/main.c: In function 'main':
+../src/main.c:32:3: warning: implicit declaration of function 'flash_read_buffer'; did you mean 'flash_write_buffer'? [-Wimplicit-function-declaration]
+   flash_read_buffer(data , WRITE_ADDRESS , (uint8_t)sizeof(received_data));
+   ^~~~~~~~~~~~~~~~~
+   flash_write_buffer
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+Finished building: ../src/main.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+Finished building target: UART.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "UART.elf" "UART.bin"
+arm-none-eabi-size "UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1952	   1264	    324	   3540	    dd4	UART.elf
+arm-none-eabi-objcopy -O ihex "UART.elf" "UART.hex"
+ 
+21:44:48 **** Incremental Build of configuration Debug for project UART ****
+make -j4 all 
+Building file: ../src/main.c
+Building file: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+/home/lucifer/github/STM32F1/Examples/UART/Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Drivers/SPI/spi_driver.d" -MT"Drivers/SPI/spi_driver.o" -o "Drivers/SPI/spi_driver.o" "/home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c"
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F1 -DSTM32F103RBTx -DNUCLEO_F103RB -DDEBUG -DSTM32F10X_MD -I"/home/lucifer/github/STM32F1/Drivers/SPI" -I"/home/lucifer/github/STM32F1/Examples/UART/inc" -I"/home/lucifer/github/STM32F1/Drivers/uart" -I"/home/lucifer/github/STM32F1/Drivers" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/device" -I"/home/lucifer/github/STM32F1/Examples/UART/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Finished building: /home/lucifer/github/STM32F1/Drivers/SPI/spi_driver.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -T"/home/lucifer/github/STM32F1/Examples/UART/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+Finished building target: UART.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "UART.elf" "UART.bin"
+arm-none-eabi-size "UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1952	   1264	    324	   3540	    dd4	UART.elf
+arm-none-eabi-objcopy -O ihex "UART.elf" "UART.hex"
+ 

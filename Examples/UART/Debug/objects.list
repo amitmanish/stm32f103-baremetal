@@ -1,0 +1,6 @@
+"Drivers/SPI/spi_driver.o"
+"Drivers/uart/uart_driver.o"
+"src/main.o"
+"src/syscalls.o"
+"src/system_stm32f10x.o"
+"startup/startup_stm32f10x_md.o"
